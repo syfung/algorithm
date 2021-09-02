@@ -8,5 +8,9 @@ class TestLinkedListInit(unittest.TestCase):
         a = [1,2,3,4]
         self.assertEqual(str(LinkedList(a)), "1, 2, 3, 4")
 
+    def test_from_char_array(self):
+        a = ['a','b','c','d']
+        self.assertEqual(str(LinkedList(a)), "a, b, c, d")
+        
 if __name__ == '__main__':
     unittest.main()
