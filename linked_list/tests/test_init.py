@@ -11,6 +11,10 @@ class TestLinkedListInit(unittest.TestCase):
     def test_from_char_array(self):
         a = ['a','b','c','d']
         self.assertEqual(str(LinkedList(a)), "a, b, c, d")
+
+    def test_from_string_array(self):
+        a = ['abcd','bcde','cdef','defg']
+        self.assertEqual(str(LinkedList(a)), "abcd, bcde, cdef, defg")
         
 if __name__ == '__main__':
     unittest.main()
