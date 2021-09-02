@@ -5,15 +5,15 @@ from .node import Node
 
 class LinkedList():
     def __init__(self, array=None):
-        # Always have a empty node at the start to make live easier
-        self.head = Node(None)
+        self.head = None
         if array != None:
-            for n in array:
+            # maybe need a try for non itterable
+            for n in reversed(array):
                 self.head = Node(n, self.head)
     
     def __str__(self):
-        s = ""
-        head = self.head
+        s = str(self.head)
+        head = self.head.next_node
         while head != None:
             s += (", " + str(head))
             head = head.next_node
