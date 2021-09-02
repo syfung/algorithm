@@ -20,5 +20,6 @@ class LinkedList():
         return s
     
 if __name__ == "__main__":
+    # just a basic test for trial
     l = LinkedList([1,2,3])
     print(l)
